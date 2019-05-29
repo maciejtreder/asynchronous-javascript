@@ -1,0 +1,20 @@
+{
+  "name": "asynchronous-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "greet.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maciejtreder/asynchronous-javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maciejtreder/asynchronous-javascript/issues"
+  },
+  "homepage": "https://github.com/maciejtreder/asynchronous-javascript#readme"
+}
