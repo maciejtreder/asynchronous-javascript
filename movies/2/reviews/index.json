@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "reviewer": "Jerry",
+        "rating": 5
+    },
+    {
+        "id": 2,
+        "reviewer": "Margaret",
+        "rating": 7
+    },
+    {
+        "id": 3,
+        "reviewer": "Bridget",
+        "rating": 6
+    },
+    {
+        "id": 4,
+        "reviewer": "Tommy",
+        "rating": 9
+    }
+]

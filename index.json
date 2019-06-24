@@ -1,0 +1,8 @@
+{
+    "description": "A simple REST mock-up, containing three routes",
+    "routes": [
+        "/directors",
+        "/directors/{id}/movies",
+        "/movies/{id}/reviews"
+    ]
+}
