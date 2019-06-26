@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/maciejtreder/asynchronous-javascript/issues"
   },
-  "homepage": "https://github.com/maciejtreder/asynchronous-javascript#readme"
+  "homepage": "https://github.com/maciejtreder/asynchronous-javascript#readme",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
 }
