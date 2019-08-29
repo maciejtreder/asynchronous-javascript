@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/maciejtreder/asynchronous-javascript#readme",
   "dependencies": {
+    "ora": "^3.4.0",
     "request": "^2.88.0"
   }
 }
