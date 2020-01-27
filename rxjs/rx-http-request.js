@@ -1,6 +1,9 @@
 import { RxHR } from '@akanass/rx-http-request';
-import { map, flatMap } from 'rxjs/operators';
+import { map, flatMap, tap } from 'rxjs/operators';
 import { combineLatest } from 'rxjs';
+import ora from 'ora';
+
+const spinner = ora().start(`The best movie by Quentin Tarantino is...`);
 
 const BASE_PATH = `https://maciejtreder.github.io/asynchronous-javascript`;
 
@@ -35,4 +38,6 @@ const moviesRatings$ = directorMovies$.pipe(
 
 const best$ = moviesRatings$.pipe(map(movies => movies.sort((m1, m2) => m2.averageScore - m1.averageScore)[0].title));
 
-best$.subscribe(result => console.log(`The best movie by Quentin Tarantino is... ${result}!`));
+best$
+.pipe(tap(_ => spinner.stop())) //this has been added
+.subscribe(result => console.log(`The best movie by Quentin Tarantino is... ${result}!`));
