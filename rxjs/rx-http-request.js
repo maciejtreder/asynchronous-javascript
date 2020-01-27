@@ -33,4 +33,6 @@ const moviesRatings$ = directorMovies$.pipe(
     })
 );
 
-moviesRatings$.subscribe(console.log);
+const best$ = moviesRatings$.pipe(map(movies => movies.sort((m1, m2) => m2.averageScore - m1.averageScore)[0].title));
+
+best$.subscribe(result => console.log(`The best movie by Quentin Tarantino is... ${result}!`));
