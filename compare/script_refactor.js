@@ -1,4 +1,4 @@
-import { Observable, Subject, empty } from 'https://dev.jspm.io/rxjs@6/_esm2015';
+import { Subject, empty, from } from 'https://dev.jspm.io/rxjs@6/_esm2015';
 import { catchError, switchMap, retry, take, tap } from 'https://dev.jspm.io/rxjs@6/_esm2015/operators';
 
 const form = document.querySelector('form');
@@ -16,13 +16,10 @@ function formSubmit(event) {
 }
 
 function sendForm(value) {
-    return Observable.create(async (subject) => {
-        const response = fetch('/form', {
-            method: 'POST',
-            body: value
-        });
-        subject.next(await response);
-    });
+    return from(fetch('/form', {
+        method: 'POST',
+        body: value
+    }));
 }
 
 const postRequest$ = form$.pipe(
