@@ -2,6 +2,7 @@
 const input = form.querySelector('input[type="text"]');
 const countLeft = document.querySelector('#count span');
 const form = document.querySelector('form');
+
 form.addEventListener('submit', formSubmit);
 
 let count = 5;

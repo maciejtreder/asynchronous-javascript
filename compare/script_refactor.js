@@ -29,7 +29,7 @@ const postRequest$ = form$.pipe(
                 if (response.status >= 400) 
                     throw new Error('Error: ' + response.status)
             }),
-            retry(1),
+            retry(3),
             catchError(_ => empty())
         );
     }),
