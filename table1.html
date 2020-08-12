@@ -1,0 +1,79 @@
+<style>
+    table {
+        width: 800px;
+        border-spacing: 0;
+        border-collapse: collapse;
+    }
+    td {
+        text-align: center;
+        border: 1px solid black;
+        padding: 5px
+    }
+
+    td.wide {
+        border: 1px dashed black;
+    }
+
+    .question {
+        font-style: italic;
+    }
+
+    .decision {
+        font-weight: bold;
+    }
+
+    .highlighted {
+        background: greenyellow;
+    }
+</style>
+
+<table>
+    <tr>
+        <td colspan="8" class="question">is repeatable?</td>
+    </tr>
+    <tr>
+        <td colspan="5" class="answer highlighted">yes</td>
+        <td colspan="3" class="answer">no</td>
+    </tr>
+    <tr>
+        <td colspan="5" class="question highlighted">react to multiple emissions?</td>
+        <td rowspan="2" colspan="3" class="decision">Promise</td>
+    </tr>
+    <tr>
+        <td colspan="4" class="answer highlighted">yes</td>
+        <td class="answer">no</td>
+    </tr>
+    <tr>
+        <td colspan="4" class="question highlighted">many listeners?</td>
+        <td colspan="4" rowspan="3" class="decision">Promise</td>
+    </tr>
+    <tr>
+        <td colspan="2" class="answer">yes</td>
+        <td colspan="2" class="answer highlighted">no</td>
+    </tr>
+    <tr>
+        <td colspan="2" class="decision">RxJS</td>
+        <td colspan="2" class="decision highlighted">callback</td>
+    </tr>
+    <tr>
+        <td colspan="8" class="question wide">fires other action?</td>
+    </tr>
+    <tr>
+        <td colspan="2" class="answer highlighted">yes</td>
+        <td colspan="4" class="answer">no</td>
+        <td colspan="2" class="answer">yes</td>
+    </tr>
+    <tr>
+        <td colspan="2" class="question highlighted">multiple times?</td>
+        <td colspan="4" rowspan="3" class="decision">stay with callback/Promise/RxJS</td>
+        <td colspan="2" rowspan="3" class="decision">Promise + async/await</td>
+    </tr>
+    <tr>
+        <td class="answer highlighted">yes</td>
+        <td class="answer">no</td>
+    </tr>
+    <tr>
+        <td class="decision highlighted">RxJS + operators</td>
+        <td class="decision">Promise + async/await</td>
+    </tr>
+</table>
