@@ -20,7 +20,7 @@
   "dependencies": {
     "@akanass/rx-http-request": "^3.3.0",
     "esm": "^3.2.25",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "ora": "^3.4.0",
     "readline-promise": "^1.0.4",
     "request": "^2.88.0",
